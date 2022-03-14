@@ -10,7 +10,8 @@ Just download, copy, or clone dataset2binary.py.  Requires numpy & pandas.  Test
 
 ## Testing notes
 * There are no automated tests at this time.  See create_test_data.py for a small python program that creates a small CSV and stata (dta) that you can test on your system.
-* The most recent tests of dataset2binary were performed with gcc/gfortran version 10.2.1 on a red hat linux system.  The c/fortran code is pretty simple, so it is likely to work with most versions of gcc/gfortran (both new and old).
+* The most recent tests of dataset2binary were performed with gcc/gfortran version 10.2.1 on a red hat linux system (with default flags). The c/fortran code is pretty simple, so it is likely to work with most versions of gcc/gfortran (both new and old).  
+* Similarly, it is likely to work with most other c/fortran compilers although it has not been tested with any others (fortran will need to be Fortran90 compliant).
 * The fortran version of the code has been used for production work with no known issues.  The c version has not been tested as extensively.
 
 ## Known issues
